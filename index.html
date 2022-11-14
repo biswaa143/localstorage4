@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Lister</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        font-family: serif;
+      }
+      .userForm,
+      ul {
+        margin-top: 10px;
+        padding: 15px;
+        width: 60vw;
+        min-width: 150px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid lightslategray;
+      }
+      label {
+        font-size: 18px;
+        /* padding: 5px; */
+        margin-bottom: 5px;
+      }
+      input {
+        width: 70%;
+        padding: 5px;
+        margin-left: 5px;
+      }
+      #submit {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        color: white;
+      }
+      li {
+        list-style: none;
+        margin: 10px;
+      }
+      .btn {
+        float: right;
+        margin-right: 2px;
+        border: none;
+        cursor: pointer;
+        color: white;
+      }
+      .edit {
+        background-color: rgb(113, 11, 247);
+      }
+      .del {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Appointment Booking App</h1>
+    <form class="userForm">
+      <label for="name">Name<input type="text" id="name" required /></label>
+      <label for="email">Email<input type="email" id="email" required /></label>
+      <label for="phoneNumber">PhoneNumber<input type="phoneNumber" id="phoneNumber" /></label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    <ul id="userList">
+      <!-- <li class="userInfo">
+        Info
+        <button class="del btn" onclick="delUser()">Delete</button>
+      </li> -->
+    </ul>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
